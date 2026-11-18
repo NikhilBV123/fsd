@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: rgb(249, 249, 249);
+}
+
+form{
+    max-width: 400px;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid rgb(204,204,204);
+    border-radius: 4px;
+}
+
+button{
+    background-color: rgb(76,175,80);
+    color: rgb(255,255,255);
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(61,166,72);
+}
+
+#status{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(0,128,0);
+}
+
+.stars{
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.star span{
+    color: rgb(204,204,204);
+}
+
+.star span.selected{
+    color: rgb(255,255,0);
+}

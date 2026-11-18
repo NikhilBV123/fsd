@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Feedback Form with Rating</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <center>
+        <h2>Submit Your Feedback</h2>
+    </center>
+
+    <form id="feedbackForm">
+
+        <label>Name:</label>
+        <input
+            type="text"
+            name="name"
+            required
+        >
+
+        <label>Email:</label>
+        <input
+            type="email"
+            name="email"
+            required
+        >
+
+        <label>Feedback:</label>
+        <textarea
+            name="message"
+            required
+        ></textarea>
+
+        <label>Rating:</label>
+
+        <div class="stars" id="starRating">
+
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+
+        </div>
+
+        <input
+            type="hidden"
+            name="rating"
+            id="ratingValue"
+            required
+        >
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+    <div id="status"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
